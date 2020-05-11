@@ -2,7 +2,7 @@ CREATE TABLE MedicalFile
 (
   MedicalFileId INT NOT NULL,
   AnimalId INT NOT NULL,
-  diseases VARCHAR(20) NOT NULL,
+  diseases VARCHAR(20) ,
   MedicalHistory VARCHAR(100) NOT NULL,
   PRIMARY KEY (MedicalFileId)
 );
