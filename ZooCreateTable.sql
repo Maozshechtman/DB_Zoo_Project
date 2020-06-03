@@ -28,7 +28,7 @@ CREATE TABLE Animal
 (
   AnimalId INT NOT NULL,
   AnimalName VARCHAR(20) NOT NULL,
-  MedicalFileId INT NOT NULL,
+  MedicalFileId INT NOT NULL UNIQUE,
   DateOfBirth DATE NOT NULL,
   AreaConditionId INT NOT NULL,
   BinomialNomenclatureId INT NOT NULL,
