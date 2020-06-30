@@ -1,0 +1,9 @@
+create or replace function numberofPilesthatdoctorgive(doctorid) return integer is
+  num_of_pills integer;
+begin
+  select count(*)into num_of_pills from treatment t natural join usein
+  where doctorid=  t.doctorid
+  
+  return(num_of_pills);
+end numberofPilesthatdoctorgive;
+/
