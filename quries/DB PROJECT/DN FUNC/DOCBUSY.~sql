@@ -1,0 +1,9 @@
+CREATE OR REPLACE  function is_busy_doctor(doctor_id pls_integer ) return boolean 
+is num_of_animals number := 0;
+begin
+  SELECT COUNT(*) INTO num_of_animals
+  FROM SHECHTMA.TREATMENT TR
+  WHERE TR.DOCTORID = doctor_id
+  RETURN CASE WHER num_of_animals >5 THEN true ELSE THEN false END;  
+
+  end;
